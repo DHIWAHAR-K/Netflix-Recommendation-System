@@ -1,7 +1,7 @@
 #recommendation.py
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 def compute_tfidf(df2):
     # Initialize a TF-IDF Vectorizer and remove stop words

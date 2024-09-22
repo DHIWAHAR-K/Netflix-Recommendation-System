@@ -14,7 +14,6 @@ def recommend():
     title = request.args.get('title')
     if not title:
         return jsonify({"error": "Please provide a movie title."}), 400
-
     # Get recommendations
     try:
         recommendations = get_recommendations(title, cosine_sim, indices, df2)
