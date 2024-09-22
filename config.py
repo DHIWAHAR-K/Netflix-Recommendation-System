@@ -1,6 +1,6 @@
 #config.py
-from services.data_loader import load_data, parse_data
-from services.recommendation import compute_tfidf, compute_cosine_similarity, create_reverse_mapping
+from data_loader import load_data, parse_data
+from recommendation import compute_tfidf, compute_cosine_similarity, create_reverse_mapping
 
 def initialize_data():
     # Load and prepare data

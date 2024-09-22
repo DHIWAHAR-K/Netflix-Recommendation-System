@@ -1,7 +1,7 @@
 #app.py
 from config import initialize_data
 from flask import Flask, jsonify, request
-from services.recommendation import get_recommendations
+from recommendation import get_recommendations
 
 app = Flask(__name__)
 
